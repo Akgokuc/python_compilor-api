@@ -33,5 +33,3 @@ def create_post():
         output_value = captured_output.getvalue()
         return output_value
 
-if __name__ == '__main__':
-    app.run(debug=True)
