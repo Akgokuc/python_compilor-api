@@ -5,14 +5,14 @@ import sys,io
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api/get')
+@app.route('/')
 def create_gwt():
         data='hello'
 
         return data
 
 # POST endpoint to create a new post
-@app.route('/api/posts', methods=['POST'])
+@app.route('/post', methods=['POST'])
 @cross_origin()
 def create_post():
         data = request.data.decode('utf-8')
